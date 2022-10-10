@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
-import { NbCardModule } from '@nebular/theme';
+import { NbEvaIconsModule } from '@nebular/eva-icons';
+import { NbAccordionModule, NbButtonModule, NbCardModule, NbIconModule, NbToggleModule } from '@nebular/theme';
+import { MockDataModule } from 'app/@core/mock/mock-data.module';
 
 import { ThemeModule } from '../../@theme/theme.module';
 import { DashboardComponent } from './dashboard.component';
@@ -8,6 +10,11 @@ import { DashboardComponent } from './dashboard.component';
   imports: [
     NbCardModule,
     ThemeModule,
+    NbToggleModule,
+    NbAccordionModule,
+    MockDataModule,
+    NbButtonModule,
+    NbIconModule,
   ],
   declarations: [
     DashboardComponent,
